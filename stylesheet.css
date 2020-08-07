@@ -1,0 +1,42 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*****************************a.html*****************************************/
+#grad1{
+    background-image: linear-gradient(to bottom right, #7FFFD4, rgb(7, 87, 90));
+}
+#button1{
+    border-radius: 4px;
+    background-color: cadetblue; 
+    color: darkslateblue; 
+    border: 2px solid rgb(69, 82, 124);
+    
+}
+#button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+#head1{
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#h31{
+    font-size: 24px;
+}
+/************************************************a1.html********************************/
+body{
+    background-image: linear-gradient(to left, Pink , LightPink ,HotPink ,DeepPink ,MediumVioletRed );
+    text-align: center;
+}
+label{
+    width: 120px;
+    display: inline-block;
+    text-align: right;
+}

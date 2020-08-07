@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Create Your Own Resume</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="d1">
+        <form action="resgen.php" method="POST">
+            <h2>CREATE YOUR RESUME</h2>
+            <label><h3>CAREER OBJECTIVE</h3></label>
+            <br>
+            <textarea name="careerobj" rows="7" cols="50"></textarea>
+            <fieldset>
+                <legend><h3>BASIC INFO</h3></legend>
+                <label>Name</label><input type="text" name="name"><br> 
+                <label>Address</label><input type="text" name="address"><br>
+                <label>Email ID</label><input type="email" name="email"><br>
+                <label>Phone Number</label><input type="text" name="phoneno"><br>
+            </fieldset>
+
+            <fieldset>
+            <legend><h3>EDUCATION</h3></legend>
+            <p>(Highest Qualification first...)</p>
+                <label>Qualification 1</label>
+                <br><br>
+                <label>Course</label><input type="text" name="course1"><br>
+                <label>Institute</label><input type="text" name="insti1"><br>
+                <label>CGPA/Percentage</label><input type="text" name="cgpa1"><br>
+                <label>Year of Passing</label><input type="text" name="year1"><br>
+                <br>
+                <label>Qualification 2</label>
+                <br><br>
+                <label>Course</label><input type="text" name="course2"><br>
+                <label>Institute</label><input type="text" name="insti2"><br>
+                <label>CGPA/Percentage</label><input type="text" name="cgpa2"><br>
+                <label>Year of Passing</label><input type="text" name="year2"><br>
+                <br>
+                <label>Qualification 3</label>
+                <br><br>
+                <label>Course</label><input type="text" name="course3"><br>
+                <label>Institute</label><input type="text" name="insti3"><br>
+                <label>CGPA/Percentage</label><input type="text" name="cgpa3"><br>
+                <label>Year of Passing</label><input type="text" name="year3"><br>
+            </fieldset>
+
+                <fieldset>
+                    <legend><h3>CERTIFICATIONS</h3></legend>
+                <p>Your certifications of online course completion from various sites like Udemy, Coursera,etc.,</p>
+                <label>Site name 1</label><input type="text" name="site1"><br>
+                <label>Site name 2</label><input type="text" name="site2"><br>
+                <label>Site name 3</label><input type="text" name="site3"><br>
+                <label>Site name 4</label><input type="text" name="site4"><br>
+                <label>Site name 5</label><input type="text" name="site5"><br>
+                </fieldset>
+
+            <fieldset>
+                <legend><h3>ACHIEVEMENTS</h3></legend>
+                <label>Achievement 1</label><input type="text" name="a1"><br>    
+                <label>Achievement 2</label><input type="text" name="ach"><br>
+                <label>Achievement 3</label><input type="text" name="ac1"><br>
+                <label>Achievement 4</label><input type="text" name="achi"><br>
+                <label>Achievement 5</label><input type="text" name="achie"><br>
+            </fieldset>
+            <fieldset>
+            <legend><h3>INDUSTRIAL EXPOSURE</h3></legend>
+            <label>Exposure 1</label><input type="text" name="in"><br>
+            <label>Exposure 2</label><input type="text" name="ind"><br>
+            <label>Exposure 3</label><input type="text" name="indu"><br>
+            <label>Exposure 4</label><input type="text" name="inde"><br>
+            <label>Exposure 5</label><input type="text" name="indep"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><h3>PROJECTS</h3></legend>
+                <p>(Your best 3 Projects....)</p>
+                <strong>Project 1</strong>
+                <br>
+                <label>Project Title</label><input type="text" name="pi"><br>
+                <label>Description</label><textarea rows="5" cols="30"name="pd"></textarea><br>
+                <label>Duration</label> <input type="text" name="pdu"><br>
+
+                <strong>Project 2</strong><br>
+                <label>Project Title</label><input type="text" name="pt"><br>
+                <label>Description</label><textarea rows="5" cols="30" name="pdes"></textarea><br>
+                <label>Duration</label><input type="text" name="pdur"><br>
+
+                <strong>Project 3</strong><br>
+                <label>Project Title</label><input type="text" name="ptit"><br>
+                <label>Description</label><textarea rows="5" cols="30" name="prodes"></textarea><br>
+                <label>Duration</label><input type="text" name="produr"><br>
+            </fieldset>
+
+            <fieldset>
+            <legend><h3>AREA OF INTERESTS</h3></legend>
+
+            <label>Interest 1</label><input type="text" name="inre"><br>
+            <label>Interest 2</label><input type="text" name="int"><br>
+            <label>Interest 3</label><input type="text" name="inte"><br>
+            <label>Interest 4</label><input type="text" name="inter"><br>
+            <label>Interest 5</label><input type="text" name="inr"><br>
+            </fieldset>
+
+
+            <fieldset>
+            <legend><h3>PERSONAL PROFILE</h3></legend>
+
+            <label>Date of Birth</label><input type="date" name="dob"><br>
+            <label>Marital status</label><input type="text" name="maritalstatus"><br>
+            <label>Known Languages</label><input type="text" name="lang"><br>
+            <label>Nationality</label><input type="text" name="nation"><br>
+            <label>Hobbies</label><input type="text" name="hobbies"><br>
+            </fieldset>
+        
+            <label><h3>DECLARATION</h3></label><br>
+            <textarea rows="5" cols="30" name="decl"></textarea>    
+            <br>
+
+
+            <a href="resgen.php"><input type="submit"></a>
+            
+        </form>
+        <input type="submit" value="How to Download?" onclick="alertbox()">
+        </div> 
+        
+        
+        <script>
+            function alertbox()
+            {
+                alert("Verify Once all your details entered are correct. Then click on Submit Button. Then Right click anywhere on the page and click \"print page\"option and then from the destination drop down select \"Save as PDF\"Option. Also disable the headers from the options tab from More settings.");
+            }
+        </script>
+    </body>
+</html>
+    
